@@ -101,7 +101,7 @@ class SlotMachine:
             print("————没中奖——————")
             self.history = self.cash - self.bet
         print('中奖号：', random_draw)
-        print('赌资金额：%s 块'% self.history)
+        print('赌资金额：%s 块' % self.history)
         self.cash = self.history
         return self.history, self.bet
 
@@ -130,11 +130,12 @@ class SlotMachine:
 
         self.plot(flag, money)
 
-    def restart_game(self):100
+    def restart_game(self):
         """
         Restart the game and reset everything back to its initial state
         :return:
         """
+        self.play()
 
 
 if __name__ == "__main__":
