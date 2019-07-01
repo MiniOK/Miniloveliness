@@ -1,0 +1,13 @@
+import scrapy
+import sys
+
+import requests
+import pprint
+
+url = "https://randomuser.me/api/?results=1"
+users = requests.get(url).json()
+pprint.pprint(users)
+
+import uuid
+user_id = uuid.uuid4()
+print(user_id)
